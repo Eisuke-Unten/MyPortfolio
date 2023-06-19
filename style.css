@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+body {
+  margin: 0 ;
+}
+/* ⇩headerはブロックボックスなのでtext-alignは可 */
+/* text-alignは継承されるのでh1 p にも影響する */
+header {
+  background: #eee;
+  text-align: center;
+  padding: 32px 0;
+  
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  padding-top: 20px;
+  /* margin: 16px 0 0; */
+}
+
+p {
+  margin: 0;
+}
+/* ⇩imgはインラインボックスなのでmargin text-alignは不可 */
+/* header img ←子孫結合子 これもあり */
+/* header > img { */
+  header img {
+  border-radius: 50%;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+main {
+  /* text-align: center; */
+  padding: 64px 0;
+}
+
+h2 {
+font-weight: normal;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 16px 0 0;
+}
+
+
+
+section {
+  width: 400px;
+  margin: 64px auto 0; 
+}
+
+section p {
+  margin-top: 16px;
+  line-height: 1.8;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 64px;
+}
+
+small {
+  font-size: 14px;
+  color: #aaa;
+
+}
+
+
+address {
+  margin-top: 16px;
+}
+a:hover {
+opacity: .7;
+}
